@@ -1,0 +1,13 @@
+package com.alaska.secure_authentication_system;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SecureAuthenticationSystemApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SecureAuthenticationSystemApplication.class, args);
+	}
+
+}
