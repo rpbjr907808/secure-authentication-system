@@ -1,0 +1,24 @@
+spring.application.name=secure-authentication-system
+
+# Database Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/auth_system_db
+spring.datasource.username=postgres
+spring.datasource.password="Hello Put Password Here"
+
+# JPA/Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# Server
+server.port=8080
+```
+
+3. **Save it**
+
+4. **Now update .gitignore** to ignore the real one:
+   - Find `.gitignore` in the root of your project (left sidebar)
+   - Open it
+   - Add this line at the bottom:
+```
+src/main/resources/application.properties
